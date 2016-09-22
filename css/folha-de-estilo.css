@@ -1,6 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 
-html, body, .page {
+html, body, .tela-em-amostra {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -17,27 +17,26 @@ html, body, .page {
   font-family: 'Roboto', sans-serif;
 }
 
-.page {
+.tela-em-amostra {
   position: absolute;
 }
 
-#p1 {
+#pagina-um {
   left: 0;
 }
 
-#p2, #p3, #p4, #p5 {
+#pagina-dois, #pagina-tres, #pagina-quatro, #pagina-cinco {
   left: 200%;
 }
 
-#p1 { background: darkslateblue; }
-#p2 { background: tomato; }
-#p3 { background: gold; }
-#p4 { background: deeppink; }
-#p5 { background: rebeccapurple; }
+#pagina-um { background: darkslateblue; }
+#pagina-dois { background: tomato; }
+#pagina-tres { background: gold; }
+#pagina-quatro { background: deeppink; }
 
-#tela-dois:target #p2,
-#tela-tres:target #p3,
-#tela-quatro:target #p4 {
+#tela-dois:target #pagina-dois,
+#tela-tres:target #pagina-tres,
+#tela-quatro:target #pagina-quatro {
   transform: translateX(-190%);
   -webkit-transform: translateX(-190%);
   -moz-transform: translateX(-190%);
@@ -45,15 +44,15 @@ html, body, .page {
   transition-delay: .4s !important;
 }
 
-#tela-dois:target #p1, 
-#tela-tres:target #p1,
-#tela-quatro:target #p1 {
+#tela-dois:target #pagina-um, 
+#tela-tres:target #pagina-um,
+#tela-quatro:target #pagina-um {
   background: black;
 }
 
-#tela-dois:target #p1 .area-da-empresa, 
-#tela-tres:target #p1 .area-da-empresa,
-#tela-quatro:target #p1 .area-da-empresa {
+#tela-dois:target #pagina-um .area-da-empresa, 
+#tela-tres:target #pagina-um .area-da-empresa,
+#tela-quatro:target #pagina-um .area-da-empresa {
   -webkit-filter: blur(3px);
 }
 
@@ -67,7 +66,7 @@ ul .area-da-empresa:hover {
   opacity: 0.5;
 }
 
-.page .area-da-empresa .title {
+.tela-em-amostra .area-da-empresa .title {
   line-height: 2;
 }
 
@@ -81,9 +80,9 @@ ul .area-da-empresa:hover {
   transition-delay: .25s;
 }
 
-#tela-dois:target #dos,
-#tela-tres:target #tres,
-#tela-quatro:target #cuatro{
+#tela-dois:target #amostra-de-tela-dois,
+#tela-tres:target #amostra-de-tela-tres,
+#tela-quatro:target #amostra-de-tela-quatro{
   transform: scale(1.2) !important;
   -webkit-transform: scale(1.2) !important;
   -moz-transform: scale(1.2) !important;
@@ -115,23 +114,23 @@ a {
   text-decoration: none;
 }
 
-.title, .hint {
+h2, .texto {
   display: block;
 }
 
-.title {
+h2 {
   font-size: 38px;
 }
 
-.hint {
+.texto {
   font-size: 13px;
 }
 
-#p4 .hint {
+#pagina-quatro .texto {
   display: inherit !important;
 }
 
-.hint a {
+.texto a {
   color: yellow;
   transition: all 250ms ease-out;
   -webkit-transition: all 250ms ease-out;
@@ -139,7 +138,7 @@ a {
   -o-transition: all 250ms ease-out;
 }
 
-.hint a:hover {
+.texto a:hover {
   color: #FFF;
 }
 
@@ -147,7 +146,7 @@ a {
   text-decoration: line-through;
 }
 
-.page .area-da-empresa {
+.tela-em-amostra .area-da-empresa {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -169,17 +168,17 @@ a {
   -o-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
 }
 
-.page#p1 .area-da-empresa {
+.tela-em-amostra#pagina-um .area-da-empresa {
   height: 220px;
 }
 
-.page#p1 .area-da-empresa {
+.tela-em-amostra#pagina-um .area-da-empresa {
   transform: translateX(10%) !important;
 }
 
-#tela-dois:target .page#p2 .area-da-empresa,
-#tela-tres:target .page#p3 .area-da-empresa,
-#tela-quatro:target .page#p4 .area-da-empresa{
+#tela-dois:target .tela-em-amostra#pagina-dois .area-da-empresa,
+#tela-tres:target .tela-em-amostra#pagina-tres .area-da-empresa,
+#tela-quatro:target .tela-em-amostra#pagina-quatro .area-da-empresa{
   transform: translateX(0) !important;
   -webkit-transform: translateX(0) !important;
   -moz-transform: translateX(0) !important;
